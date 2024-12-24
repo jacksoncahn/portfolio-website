@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.title {
+  /* font-size: xx-large; */
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  /* align-items: center; */
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-columns: repeat(3, max-content);
+  gap: 10px;
+  /* align-self: center;
+  justify-self: center; */
+  padding: 5px;
+  justify-items: center;
+  width: 100vw;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.profile-img {
+  width: 200px;
+  border-radius: 40px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links {
+  justify-content: center;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.imgandlinks {
+  display: flex;
+  flex-direction: row;
 }
 
-.card {
-  padding: 2em;
+.name {
+  /* grid-row: 2/span 1;
+  grid-column: 1; */
+  text-align: left;
 }
 
-.read-the-docs {
-  color: #888;
+.bio {
+  /* grid-column: 1 / span 1;
+  grid-row: 3 / span 1; */
+  text-align: left;
+  align-self: end;
+  /* font-size: small; */
+  width: 300px;
+  text-align: left;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.nameandbio {
+  grid-row: 1 /span 1;
+  grid-column: 1/ span 1;
+  padding-left: 10px;
+}
+
+.skills {
+  /* font-size: small; */
+  max-width: 33vw;
+}
+.projects {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  margin: 0;
+}
+
+.projectnav {
+  background-color: aliceblue;
+  border-radius: 6px;
+}
+
+.details {
+  max-width: 400px;
+}
+.projecttitle {
+  /* font-size: large; */
+  padding-left: 10px;
+}
+
+.blurb {
+  padding-left: 10px;
+}
+
+
+.projectsheader {
+  padding-left: 10px;
+}
+
+.softskills {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.techskills {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
 }
